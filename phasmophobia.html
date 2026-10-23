@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phasmophobia · Archivo de fantasmas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-phasmophobia">
+<div class="contenedor">
+
+  <nav class="menu" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="phasmophobia.html" aria-current="page">Phasmophobia</a>
+    <a href="demonologist.html">Demonologist</a>
+  </nav>
+
+  <header>
+    <h1>Phasmophobia</h1>
+    <p class="intro">Pulsa una prueba una vez si la has encontrado y otra vez si la has descartado. La lista se filtra sola.</p>
+  </header>
+
+  <main>
+    <div class="pruebas" id="pruebas"></div>
+
+    <div class="barra">
+      <p id="contador" aria-live="polite"></p>
+      <button class="reiniciar" id="reiniciar" type="button">Borrar pruebas</button>
+    </div>
+
+    <ul class="lista" id="lista"></ul>
+  </main>
+
+  <footer>Los datos de los fantasmas están en js/phasmophobia.js, en la lista FANTASMAS. Revísalos con tu fuente antes de fiarte de ellos.</footer>
+</div>
+
+<script src="js/phasmophobia.js"></script>
+</body>
+</html>
